@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+		.container {
+		  min-height: 75rem;
+		  padding-top: 4.5rem;
+		}
+
+		.container-fluid{
+		  letter-spacing:-3px;
+		  padding-left:30px;
+		  margin-left:150px;
+		  height:60px;
+		}
+		
+		.list-group {
+		  margin-left:50px;
+		  width:200px;
+		}
+		
+		.label {
+		  margin-top:100px;
+		}
+		
+		.table{
+		  border-color:white;
+		}
+		
+		.link-secondary {
+			margin-right:30px;
+		}
+
+		.navbar {
+			padding-top:0px;
+		}
