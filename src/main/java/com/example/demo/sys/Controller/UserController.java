@@ -202,6 +202,14 @@ public class UserController {
 			
 			return "redirect:/GS/Modify/" + userModify.getUSER_ID();
 		} else {
+			if(!Pattern.matches("^[A-Za-z0-9+_.-]+@(.+)$", user.getMAIL_ADR())){
+			 	rttr.addFlashAttribute("msg", 3);
+				
+				System.out.println("メールアドレス入力誤り！");
+				System.out.println(user.getMAIL_ADR());
+				
+				return "redirect:/GS/Modify/" + userModify.getUSER_ID();
+		 }
 
 			System.out.println("変更成功！");
 			
